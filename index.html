@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Meme Generator</h1>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="sidebar">
+            <p>Add Image</p>
+            <input type="file" id="file">
+            <div class="group">
+                <textarea placeholder="your text here" id="text"></textarea>
+                <input type="color" id="color" value="#ffffff">
+                <button id="addText">Add text to image</button>
+                <p>You can add multiply texts one after another</p>
+            </div>
+            <button id="clear">Clear</button>
+            <button id="save">Save image to your PC</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js" integrity="sha512-CeIsOAsgJnmevfCi2C7Zsyy6bQKi43utIjdA87Q0ZY84oDqnI0uwfM9+bKiIkI75lUeI00WG/+uJzOmuHlesMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
